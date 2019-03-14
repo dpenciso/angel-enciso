@@ -1,0 +1,53 @@
+/* CSS reset */
+body, p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+
+}
+
+/* box model fix here */
+* {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+/* body */
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: lightgray;
+}
+
+/* header */
+
+header {
+    background-color: #f7a718;
+}
+
+nav {
+    background-color: #577abc;
+}
+
+nav ul.nav li {
+    float: right;
+    list-style-type: none;
+}
+
+nav ul.nav li a {
+    display: block;
+    padding: 10px 40px;
+    color: white;
+    text-decoration: none;
+    border-left: solid 1px black;
+}
+
+nav ul.nav li a:hover {
+    background-color: coral;
+}
+
+nav ul.nav li.active a {
+    background-color: purple;
+}
+
+.keepOpen {
+    clear: both;
+}
