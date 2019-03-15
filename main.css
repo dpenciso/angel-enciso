@@ -2,7 +2,7 @@
 body, p, h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
-
+    color: #0a384a
 }
 
 /* box model fix here */
@@ -14,17 +14,37 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 body {
     font-family: 'Noto Sans SC', sans-serif;
-    background-color: lightgray;
+    background-color: #f4f3e1;
 }
 
 /* header */
 
 header {
-    background-color: #f7a718;
+    background-color: #609691;
 }
 
+
+header h1 {
+    font-size: 2.5rem;
+    padding: .25rem 0rem 0rem 2rem;
+}
+
+header h2 {
+    font-size: .86rem;
+    padding: 0rem 0rem .5rem 2rem;
+    letter-spacing: 5.1px;
+    color: #f4f3e1;
+}
+
+/* navigation */
+
 nav {
-    background-color: #577abc;
+    background-color: #0a384a;
+    border-top-color: #f4f3e1;
+}
+
+.nav {
+    margin: 0;
 }
 
 nav ul.nav li {
@@ -35,19 +55,95 @@ nav ul.nav li {
 nav ul.nav li a {
     display: block;
     padding: 10px 40px;
-    color: white;
+    color: #f4f3e1;
     text-decoration: none;
-    border-left: solid 1px black;
+    border-left: solid 1px #f4f3e1;
 }
 
 nav ul.nav li a:hover {
-    background-color: coral;
+    background-color: #c2d2c4;
 }
 
 nav ul.nav li.active a {
-    background-color: purple;
+    background-color: #c98115;
 }
 
 .keepOpen {
     clear: both;
+}
+
+/* main */
+
+main {
+    padding: .5rem 2%;
+}
+
+main h1 {
+    font-size: 1.75rem;
+    border-bottom: 1px solid #0a384a;
+    padding: 0 0 .4rem 0;
+}
+
+main h2 {
+    font-size: 1.15rem;
+    padding: 0 0 .4rem 0;
+    margin-top: .5rem;
+}
+
+main p {
+    padding-bottom: .8rem;
+    line-height: 150%;
+}
+
+main blockquote {
+    margin: .6rem 1rem 1rem 1rem;
+    font-size: .9rem;
+}
+
+main a {
+    color: #609691;
+}
+
+main a:hover {
+    color: #c98115;
+}
+
+/* lists */
+
+main ul.services, main ol.jobs {
+    margin: 0 0 .8rem 0;
+    padding: 0 0 0 1rem;
+}
+
+main ul.services {
+    list-style-type: square;
+}
+
+main ol.jobs {
+    list-style-type: circle;
+}
+
+main dl dt {
+    margin: 0;
+    font-weight: 600;
+    padding: 0 0 0 1rem;
+}
+
+main dl dd {
+    margin: 0;
+    padding: 0 0 .75rem 2rem;
+}
+
+/* footer */
+
+footer {
+    background-color: #0a384a;
+}
+
+footer p {
+    text-align: center;
+    color: #f4f3e1;
+    padding: .5rem;
+    font-size: .8rem;
+    font-weight: 600
 }
